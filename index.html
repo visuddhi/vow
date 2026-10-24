@@ -41,6 +41,7 @@
     <div class="verdict">部署求婚合约</div>
     <label>网络</label>
     <select id="dChain">
+      <option value="1">Ethereum 以太坊主网</option>
       <option value="84532">Base Sepolia（测试网，免费演练）</option>
       <option value="8453">Base（正式）</option>
     </select>
@@ -94,6 +95,7 @@ Will you marry me?</textarea>
 <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js" integrity="sha384-6Zl0Pc8zjSz8KvmNeXRvUQgY4ryFb+BwDvKCmLYcBME0joAaru491tQgi9B7zsMM" crossorigin="anonymous"></script>
 <script>
 const CHAINS = {
+  1:     { name:"Ethereum",     rpc:"https://ethereum-rpc.publicnode.com", explorer:"https://etherscan.io" },
   8453:  { name:"Base",         rpc:"https://mainnet.base.org", explorer:"https://basescan.org" },
   84532: { name:"Base Sepolia", rpc:"https://sepolia.base.org", explorer:"https://sepolia.basescan.org" },
   31337: { name:"Local",        rpc:"http://127.0.0.1:8545",    explorer:"" },
